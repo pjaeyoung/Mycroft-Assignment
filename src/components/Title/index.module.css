@@ -1,0 +1,10 @@
+.text {
+  color: var(--text-color);
+  font-size: var(--medium-title-size);
+}
+
+@media screen and (max-width: 700px) {
+  .text {
+    font-size: var(--small-title-size);
+  }
+}

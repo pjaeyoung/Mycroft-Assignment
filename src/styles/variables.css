@@ -10,6 +10,8 @@
   --text-size: calc(20 * 1px);
   --bold-text-weight: 500;
   --thin-text-weight: 300;
-  --big-title-size: calc(150 * 1px);
+  --big-title-size: calc(160 * 1px);
+  --medium-title-size: calc(80 * 1px);
+  --small-title-size: calc(40 * 1px);
   --btn-primary-color: var(--nav-highlight-color);
 }
