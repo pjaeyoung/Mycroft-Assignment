@@ -1,0 +1,9 @@
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+.main {
+  color: #fff;
+  margin: 100px;
+}
