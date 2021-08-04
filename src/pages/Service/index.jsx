@@ -12,7 +12,7 @@ function Service() {
   const history = useHistory()
 
   const onClickOrderButton = () => {
-    if (existingToken()) {
+    if (existingToken) {
       alertOrderSuccess()
     } else {
       alertOrderFail()

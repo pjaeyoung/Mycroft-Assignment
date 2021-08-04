@@ -1,5 +1,9 @@
 import { createSlice, createAsyncThunk } from '@reduxjs/toolkit'
-import { FETCH_STATE, LOGIN_FAIL_MESSAGE } from '../constants'
+import {
+  FETCH_STATE,
+  LOGIN_FAIL_MESSAGE,
+  SIGNUP_FAIL_MESSAGE,
+} from '../constants'
 import { authAPI } from '../api'
 
 const initialState = {
@@ -16,6 +20,35 @@ export const fetchLogin = createAsyncThunk(
   },
 )
 
+export const fetchSignup = createAsyncThunk(
+  'auth/fetchSignup',
+  async ({ email, password, mobile }) => {
+    const response = await authAPI.fetchSignup({ email, password, mobile })
+    return response.data
+  },
+)
+
+const callbackFulfilled = (state, action) => {
+  state.token = action.payload.token
+  state.state = FETCH_STATE.IDLE
+}
+
+const callbackRejected = (state, action) => {
+  state.state = FETCH_STATE.FAIL
+  const errorMessage = action.type.includes('login')
+    ? LOGIN_FAIL_MESSAGE
+    : SIGNUP_FAIL_MESSAGE
+  state.error = errorMessage
+}
+
+const callbackPending = (state) => {
+  state.state = FETCH_STATE.PENDING
+  state.token = null
+  state.error = null
+}
+
+const asyncThunks = [fetchLogin, fetchSignup]
+
 export const authSlice = createSlice({
   name: 'auth',
   initialState,
@@ -25,20 +58,12 @@ export const authSlice = createSlice({
     },
   },
   extraReducers: (builder) => {
-    builder
-      .addCase(fetchLogin.fulfilled, (state, action) => {
-        state.token = action.payload.token
-        state.state = FETCH_STATE.IDLE
-      })
-      .addCase(fetchLogin.pending, (state, action) => {
-        state.state = FETCH_STATE.PENDING
-        state.token = null
-        state.error = null
-      })
-      .addCase(fetchLogin.rejected, (state, action) => {
-        state.state = FETCH_STATE.FAIL
-        state.error = action.error?.message ?? LOGIN_FAIL_MESSAGE
-      })
+    asyncThunks.forEach((aAsyncThunk) => {
+      builder
+        .addCase(aAsyncThunk.fulfilled, callbackFulfilled)
+        .addCase(aAsyncThunk.pending, callbackPending)
+        .addCase(aAsyncThunk.rejected, callbackRejected)
+    })
   },
 })
 

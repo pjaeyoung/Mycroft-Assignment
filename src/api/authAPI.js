@@ -15,8 +15,20 @@ function fetchLogin({ email, password }) {
   })
 }
 
+function fetchSignup({ email, password, mobile }) {
+  return axios.post(`${SERVER_URL}/sign-up`, {
+    headers,
+    data: {
+      email,
+      password,
+      mobile,
+    },
+  })
+}
+
 const authAPI = {
   fetchLogin,
+  fetchSignup,
 }
 
 export default authAPI

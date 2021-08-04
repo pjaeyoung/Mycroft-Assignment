@@ -30,14 +30,14 @@ function Header() {
           </li>
           <li>
             <NavLink
-              to={existingToken() ? '/mypage/order' : '/sign-up'}
+              to={existingToken ? '/mypage/order' : '/sign-up'}
               className={styles.navItem}
               activeClassName={styles.active}>
-              {existingToken() ? '마이페이지' : '회원가입'}
+              {existingToken ? '마이페이지' : '회원가입'}
             </NavLink>
           </li>
           <li>
-            {existingToken() ? (
+            {existingToken ? (
               <LogoutButton />
             ) : (
               <NavLink
