@@ -1,16 +1,23 @@
 import React from 'react'
-import classNames from 'classnames'
+import Loader from 'react-loader-spinner'
+
 import styles from './index.module.css'
 
-function Button({ text, primary = true, secondary = false, onClick }) {
+function Button({
+  text,
+  primary = true,
+  secondary = false,
+  disabled = false,
+  loading = false,
+  onClick,
+}) {
   return (
-    <button
-      onClick={onClick}
-      className={classNames(styles.button, {
-        [`${styles.primary}`]: primary,
-        [`${styles.secondary}`]: secondary,
-      })}>
-      {text}
+    <button disabled={disabled} onClick={onClick} className={styles.button}>
+      {loading ? (
+        <Loader type="TailSpin" color="#00BFFF" height={20} width={20} />
+      ) : (
+        text
+      )}
     </button>
   )
 }

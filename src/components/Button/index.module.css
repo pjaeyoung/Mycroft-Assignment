@@ -4,6 +4,7 @@
   color: var(--text-color);
   border: none;
   border-radius: 5px;
+  background-color: var(--btn-primary-color);
   font-size: var(--text-size);
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
@@ -11,19 +12,10 @@
   -o-border-radius: 5px;
 }
 
-.primary {
-  background-color: var(--btn-primary-color);
+.button:disabled {
+  background-color: var(--btn-inactive-color);
 }
 
-.secondary {
-  background: none;
-  border: 3px solid var(--btn-primary-color);
-}
-
-.button.primary:hover {
+.button:not(:disabled):hover {
   opacity: 0.5;
-}
-
-.button.secondary:hover {
-  background-color: var(--btn-primary-color);
 }
