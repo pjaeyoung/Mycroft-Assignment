@@ -1,0 +1,8 @@
+.errorMessage {
+  color: tomato;
+  font-size: var(--form-error-text-size);
+}
+
+.errorMessage:last-of-type {
+  padding-bottom: 22px;
+}

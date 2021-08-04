@@ -16,4 +16,5 @@
   --small-title-size: calc(40 * 1px);
   --btn-primary-color: var(--nav-highlight-color);
   --btn-inactive-color: var(--nav-inactive-color);
+  --form-error-text-size: 12px;
 }
