@@ -16,7 +16,12 @@
 }
 
 .navItem {
+  background: none;
+  border: none;
+  text-decoration: none;
+  font-size: var(--nav-item-text-size);
   color: var(--nav-inactive-color);
+  cursor: pointer;
 }
 
 .navItem:hover {

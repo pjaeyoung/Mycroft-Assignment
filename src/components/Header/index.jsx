@@ -1,8 +1,13 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom'
+import { useAuth } from '../../hooks'
+import LogoutButton from './LogoutButton'
+
 import styles from './index.module.css'
 
 function Header() {
+  const { existingToken } = useAuth()
+
   return (
     <header className={styles.header}>
       <img
@@ -25,19 +30,23 @@ function Header() {
           </li>
           <li>
             <NavLink
-              to="/sign-up"
+              to={existingToken() ? '/mypage/order' : '/sign-up'}
               className={styles.navItem}
               activeClassName={styles.active}>
-              회원가입
+              {existingToken() ? '마이페이지' : '회원가입'}
             </NavLink>
           </li>
           <li>
-            <NavLink
-              to="/login"
-              className={styles.navItem}
-              activeClassName={styles.active}>
-              로그인
-            </NavLink>
+            {existingToken() ? (
+              <LogoutButton />
+            ) : (
+              <NavLink
+                to="/login"
+                className={styles.navItem}
+                activeClassName={styles.active}>
+                로그인
+              </NavLink>
+            )}
           </li>
         </ul>
       </nav>

@@ -3,6 +3,7 @@
 :root {
   --nav-highlight-color: #4285f3;
   --nav-inactive-color: #6d7278;
+  --nav-item-text-size: 15px;
   --header-color: #2e2f31;
   --bg-color: #1b1c1f;
   --font: 'Noto Sans KR';
