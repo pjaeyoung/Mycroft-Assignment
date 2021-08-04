@@ -8,6 +8,10 @@
   padding-bottom: 50px;
 }
 
+.error {
+  border: 3px solid tomato;
+}
+
 .input {
   padding: 10px 5px;
   border-radius: 5px;
