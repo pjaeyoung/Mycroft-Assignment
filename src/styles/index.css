@@ -4,6 +4,7 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  font-family: var(--font), sans-serif;
 }
 
 ul {
@@ -12,5 +13,4 @@ ul {
 
 body {
   background: var(--bg-color);
-  font-family: var(--font), sans-serif;
 }

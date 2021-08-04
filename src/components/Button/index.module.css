@@ -1,0 +1,29 @@
+.button {
+  cursor: pointer;
+  padding: 10px 15px;
+  color: var(--text-color);
+  border: none;
+  border-radius: 5px;
+  font-size: var(--text-size);
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+
+.primary {
+  background-color: var(--btn-primary-color);
+}
+
+.secondary {
+  background: none;
+  border: 3px solid var(--btn-primary-color);
+}
+
+.button.primary:hover {
+  opacity: 0.5;
+}
+
+.button.secondary:hover {
+  background-color: var(--btn-primary-color);
+}
