@@ -7,6 +7,9 @@
   --bg-color: #1b1c1f;
   --font: 'Noto Sans KR';
   --text-color: #c7c7c7;
-  --bold-text-size: 500;
-  --thin-text-size: 300;
+  --text-size: calc(20 * 1px);
+  --bold-text-weight: 500;
+  --thin-text-weight: 300;
+  --big-title-size: calc(150 * 1px);
+  --btn-primary-color: var(--nav-highlight-color);
 }

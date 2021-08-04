@@ -1,0 +1,35 @@
+.container {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.title {
+  color: var(--text-color);
+  font-size: var(--big-title-size);
+}
+
+.errorMessage {
+  color: var(--text-color);
+  font-size: var(--text-size);
+  margin: 10px 0 50px;
+}
+
+.btnHome {
+  background-color: var(--btn-primary-color);
+  padding: 10px;
+  color: var(--text-color);
+  text-decoration: none;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+
+.btnHome:hover {
+  opacity: 0.5;
+}
