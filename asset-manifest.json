@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/Mycroft-Assignment/static/css/main.53d40acc.chunk.css",
+    "main.js": "/Mycroft-Assignment/static/js/main.762a295f.chunk.js",
+    "main.js.map": "/Mycroft-Assignment/static/js/main.762a295f.chunk.js.map",
+    "runtime-main.js": "/Mycroft-Assignment/static/js/runtime-main.d21a7a51.js",
+    "runtime-main.js.map": "/Mycroft-Assignment/static/js/runtime-main.d21a7a51.js.map",
+    "static/js/2.5a702501.chunk.js": "/Mycroft-Assignment/static/js/2.5a702501.chunk.js",
+    "static/js/2.5a702501.chunk.js.map": "/Mycroft-Assignment/static/js/2.5a702501.chunk.js.map",
+    "index.html": "/Mycroft-Assignment/index.html",
+    "static/css/main.53d40acc.chunk.css.map": "/Mycroft-Assignment/static/css/main.53d40acc.chunk.css.map",
+    "static/js/2.5a702501.chunk.js.LICENSE.txt": "/Mycroft-Assignment/static/js/2.5a702501.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.d21a7a51.js",
+    "static/js/2.5a702501.chunk.js",
+    "static/css/main.53d40acc.chunk.css",
+    "static/js/main.762a295f.chunk.js"
+  ]
+}
