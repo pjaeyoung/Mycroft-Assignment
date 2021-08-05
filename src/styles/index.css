@@ -11,6 +11,12 @@ ul {
   list-style: none;
 }
 
+html,
+body,
+.root {
+  min-height: 100vh;
+}
+
 body {
   background: var(--bg-color);
 }

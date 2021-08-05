@@ -14,3 +14,6 @@ export const FORM_VALIDATION = {
   PASSWORD_DOUBLE_CHECK: '입력하신 패스워드와 일치하지 않습니다.',
   MOBILE: '잘못된 연락처 양식입니다.',
 }
+
+// Mypage 관련 메세지
+export const NO_ORDERS_FOUND = '주문정보가 없습니다. '

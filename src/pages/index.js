@@ -1,6 +1,5 @@
 export { default as Service } from './Service/index'
 export { default as Login } from './Login/index'
 export { default as Signup } from './Signup/index'
-export { default as MyPage } from './MyPage'
-export { default as MyPageDetail } from './MyPageDetail'
+export { default as MyPage } from './MyPage/index'
 export { default as Error404 } from './Error404/index'

@@ -1,7 +1,8 @@
 import React from 'react'
 import { Route, Switch, useRouteMatch } from 'react-router-dom'
-import Layout from '../layout'
-import MyPageDetail from './MyPageDetail'
+import { OrderList, Title } from '../../components'
+import Layout from '../../layout'
+import MyPageDetail from './Detail'
 
 function MyPage() {
   let { path } = useRouteMatch()
@@ -10,7 +11,8 @@ function MyPage() {
     <Layout>
       <Switch>
         <Route exact path={path}>
-          <h1>This is MyPage</h1>
+          <Title text="마이페이지 화면" />
+          <OrderList />
         </Route>
         <Route path={`${path}/:id`}>
           <MyPageDetail />
