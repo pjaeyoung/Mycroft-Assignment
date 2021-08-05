@@ -35,7 +35,7 @@ const callbackFulfilled = (state, action) => {
 
 const callbackRejected = (state, action) => {
   state.state = FETCH_STATE.FAIL
-  const errorMessage = action.type.includes('login')
+  const errorMessage = action.type.includes('fetchLogin')
     ? LOGIN_FAIL_MESSAGE
     : SIGNUP_FAIL_MESSAGE
   state.error = errorMessage
