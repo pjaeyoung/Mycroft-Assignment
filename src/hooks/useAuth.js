@@ -13,7 +13,7 @@ function useAuth() {
   const existingToken = !!token
 
   const login = ({ email, password }) => {
-    dispatch(fetchLogin({ email, password }))
+    return dispatch(fetchLogin({ email, password }))
   }
 
   const logout = () => {
@@ -21,7 +21,7 @@ function useAuth() {
   }
 
   const signup = ({ email, password, mobile }) => {
-    dispatch(fetchSignup({ email, password, mobile }))
+    return dispatch(fetchSignup({ email, password, mobile }))
   }
 
   const isLoading = state === FETCH_STATE.PENDING
