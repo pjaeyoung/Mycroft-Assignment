@@ -12,7 +12,7 @@ function Header() {
     <header className={styles.header}>
       <img
         className={styles.logo}
-        src="/images/logo.svg"
+        src={`${process.env.PUBLIC_URL}/images/logo.svg`}
         alt="logo"
         width={50}
         height={50}

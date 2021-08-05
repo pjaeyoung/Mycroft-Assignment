@@ -1,5 +1,5 @@
 import React from 'react'
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
+import { HashRouter as Router, Route, Switch } from 'react-router-dom'
 import { Error404, Login, MyPage, Service, Signup } from './pages'
 import PrivateRoute from './PrivateRoute'
 

@@ -25,7 +25,7 @@ function Service() {
       <div className={styles.productContainer}>
         <img
           className={styles.productImg}
-          src="/images/product.jpg"
+          src={`${process.env.PUBLIC_URL}/images/product.jpg`}
           alt="product"
           width={300}
           height={250}
