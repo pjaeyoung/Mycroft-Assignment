@@ -6,10 +6,12 @@ import {
 } from '../constants'
 import { authAPI } from '../api'
 
+import { storage } from '../utils'
+
 const initialState = {
   state: FETCH_STATE.IDLE,
   error: null,
-  token: null,
+  token: storage.getToken() ?? null,
 }
 
 export const fetchLogin = createAsyncThunk(

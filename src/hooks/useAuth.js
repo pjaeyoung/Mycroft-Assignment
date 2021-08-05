@@ -5,6 +5,7 @@ import {
   fetchSignup,
   logout as logoutAction,
 } from '../store/authSlice'
+import { storage } from '../utils'
 
 function useAuth() {
   const { token, state, error } = useSelector((state) => state.auth)
@@ -18,6 +19,7 @@ function useAuth() {
 
   const logout = () => {
     dispatch(logoutAction())
+    storage.clearToken()
   }
 
   const signup = ({ email, password, mobile }) => {

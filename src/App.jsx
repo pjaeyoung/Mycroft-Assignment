@@ -1,6 +1,7 @@
 import React from 'react'
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
 import { Error404, Login, MyPage, Service, Signup } from './pages'
+import PrivateRoute from './PrivateRoute'
 
 function App() {
   return (
@@ -15,9 +16,7 @@ function App() {
         <Route exact path="/login">
           <Login />
         </Route>
-        <Route path="/mypage/order">
-          <MyPage />
-        </Route>
+        <PrivateRoute path="/mypage/order" component={MyPage} />
         <Route path="*">
           <Error404 />
         </Route>
