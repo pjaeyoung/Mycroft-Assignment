@@ -5,7 +5,7 @@
   border: none;
   border-radius: 5px;
   background-color: var(--btn-primary-color);
-  font-size: var(--text-size);
+  font-size: var(--medium-text-size);
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
   -ms-border-radius: 5px;

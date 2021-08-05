@@ -1,6 +1,6 @@
 .errorMessage {
   color: tomato;
-  font-size: var(--form-error-text-size);
+  font-size: var(--small-text-size);
 }
 
 .errorMessage:last-of-type {

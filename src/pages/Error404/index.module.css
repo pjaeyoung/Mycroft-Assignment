@@ -14,7 +14,7 @@
 
 .errorMessage {
   color: var(--text-color);
-  font-size: var(--text-size);
+  font-size: var(--medium-text-size);
   margin: 10px 0 50px;
 }
 

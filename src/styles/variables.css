@@ -1,20 +1,25 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;500&display=swap');
 
 :root {
-  --nav-highlight-color: #4285f3;
-  --nav-inactive-color: #6d7278;
+  --light-gray-color: #c7c7c7;
+  --gray-color: #6d7278;
+  --dark-gray-color: #2e2f31;
+  --blue-color: #4285f3;
+  --black-color: #1b1c1f;
+  --medium-text-size: 20px;
+  --small-text-size: 12px;
+  --big-title-size: 160px;
+  --medium-title-size: 80px;
+  --small-title-size: 40px;
+  --nav-highlight-color: var(--blue-color);
+  --nav-inactive-color: var(--gray-color);
   --nav-item-text-size: 15px;
-  --header-color: #2e2f31;
-  --bg-color: #1b1c1f;
+  --header-color: var(--dark-gray-color);
+  --bg-color: var(--black-color);
   --font: 'Noto Sans KR';
-  --text-color: #c7c7c7;
-  --text-size: calc(20 * 1px);
+  --text-color: var(--light-gray-color);
   --bold-text-weight: 500;
   --thin-text-weight: 300;
-  --big-title-size: calc(160 * 1px);
-  --medium-title-size: calc(80 * 1px);
-  --small-title-size: calc(40 * 1px);
-  --btn-primary-color: var(--nav-highlight-color);
+  --btn-primary-color: var(--blue-color);
   --btn-inactive-color: var(--nav-inactive-color);
-  --form-error-text-size: 12px;
 }
