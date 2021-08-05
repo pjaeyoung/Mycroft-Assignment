@@ -1,0 +1,18 @@
+.container {
+  margin-top: 100px;
+  width: 50%;
+  max-width: 300px;
+  height: 150px;
+  background-color: var(--light-gray-color);
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.orderId {
+  color: var(--blue-color);
+}
+
+.orderName {
+  color: var(--black-color);
+}

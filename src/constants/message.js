@@ -16,4 +16,5 @@ export const FORM_VALIDATION = {
 }
 
 // Mypage 관련 메세지
-export const NO_ORDERS_FOUND = '주문정보가 없습니다. '
+export const NO_ORDERS_FOUND = '주문 목록이 없습니다. '
+export const NO_ORDER_FOUND = '존재하지 않는 주문입니다.'
