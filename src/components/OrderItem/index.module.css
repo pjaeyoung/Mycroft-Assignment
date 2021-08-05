@@ -8,3 +8,7 @@
   color: var(--black-color, black);
   background-color: var(--light-gray-color, gray);
 }
+
+.orderId {
+  color: var(--blue-color);
+}

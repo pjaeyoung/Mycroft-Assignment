@@ -4,7 +4,7 @@ import styles from './index.module.css'
 function OrderItem({ id, itemName }) {
   return (
     <li className={styles.container}>
-      <span>{id}</span>
+      <span className={styles.orderId}>{id}</span>
       <span>{itemName}</span>
     </li>
   )
