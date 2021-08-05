@@ -3,14 +3,7 @@ import Loader from 'react-loader-spinner'
 
 import styles from './index.module.css'
 
-function Button({
-  text,
-  primary = true,
-  secondary = false,
-  disabled = false,
-  loading = false,
-  onClick,
-}) {
+function Button({ text, disabled = false, loading = false, onClick }) {
   return (
     <button disabled={disabled} onClick={onClick} className={styles.button}>
       {loading ? (
