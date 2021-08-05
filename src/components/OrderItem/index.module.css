@@ -1,0 +1,10 @@
+.container {
+  height: 150px;
+  margin: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  font-size: var(--medium-text-size);
+  color: var(--black-color, black);
+  background-color: var(--light-gray-color, gray);
+}
