@@ -21,6 +21,10 @@ body {
   background: var(--bg-color);
 }
 
+a {
+  text-decoration: none;
+}
+
 ::-webkit-scrollbar {
   display: none;
 }

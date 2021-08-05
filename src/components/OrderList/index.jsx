@@ -9,8 +9,8 @@ import FetchErrorMessage from '../FetchErrorMessage'
 
 import styles from './index.module.css'
 
-function OrderList() {
-  const { orders, isLoading, existingError } = useOrders()
+function OrderList({ page }) {
+  const { orders, isLoading, existingError } = useOrders(page)
 
   if (isLoading) {
     return <Loader type="TailSpin" color="#00BFFF" height={50} width={50} />
