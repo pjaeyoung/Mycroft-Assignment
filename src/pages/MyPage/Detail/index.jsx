@@ -1,5 +1,5 @@
 import React from 'react'
-import { FetchErrorMessage, OrderItem, Title } from '../../../components'
+import { FetchErrorMessage, Title } from '../../../components'
 
 import { useParams } from 'react-router-dom'
 
