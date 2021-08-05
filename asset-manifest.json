@@ -1,20 +1,20 @@
 {
   "files": {
     "main.css": "/Mycroft-Assignment/index.html/static/css/main.53d40acc.chunk.css",
-    "main.js": "/Mycroft-Assignment/index.html/static/js/main.7fe53e66.chunk.js",
-    "main.js.map": "/Mycroft-Assignment/index.html/static/js/main.7fe53e66.chunk.js.map",
+    "main.js": "/Mycroft-Assignment/index.html/static/js/main.ceba63fc.chunk.js",
+    "main.js.map": "/Mycroft-Assignment/index.html/static/js/main.ceba63fc.chunk.js.map",
     "runtime-main.js": "/Mycroft-Assignment/index.html/static/js/runtime-main.ffa3cdf7.js",
     "runtime-main.js.map": "/Mycroft-Assignment/index.html/static/js/runtime-main.ffa3cdf7.js.map",
-    "static/js/2.054a3ed5.chunk.js": "/Mycroft-Assignment/index.html/static/js/2.054a3ed5.chunk.js",
-    "static/js/2.054a3ed5.chunk.js.map": "/Mycroft-Assignment/index.html/static/js/2.054a3ed5.chunk.js.map",
+    "static/js/2.5a702501.chunk.js": "/Mycroft-Assignment/index.html/static/js/2.5a702501.chunk.js",
+    "static/js/2.5a702501.chunk.js.map": "/Mycroft-Assignment/index.html/static/js/2.5a702501.chunk.js.map",
     "index.html": "/Mycroft-Assignment/index.html/index.html",
     "static/css/main.53d40acc.chunk.css.map": "/Mycroft-Assignment/index.html/static/css/main.53d40acc.chunk.css.map",
-    "static/js/2.054a3ed5.chunk.js.LICENSE.txt": "/Mycroft-Assignment/index.html/static/js/2.054a3ed5.chunk.js.LICENSE.txt"
+    "static/js/2.5a702501.chunk.js.LICENSE.txt": "/Mycroft-Assignment/index.html/static/js/2.5a702501.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.ffa3cdf7.js",
-    "static/js/2.054a3ed5.chunk.js",
+    "static/js/2.5a702501.chunk.js",
     "static/css/main.53d40acc.chunk.css",
-    "static/js/main.7fe53e66.chunk.js"
+    "static/js/main.ceba63fc.chunk.js"
   ]
 }
