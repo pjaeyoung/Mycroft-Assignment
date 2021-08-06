@@ -1,6 +1,7 @@
 ## Mycroft 사전과제 
 - 구현 기간 : 3일 (2021/08/02 ~ 2021/08/05)
 - 사용 스택 : React / Redux 
+- 배포 링크 : https://pjaeyoung.github.io/Mycroft-Assignment/
 
 ![스크린샷, 2021-08-05 23-27-48](https://user-images.githubusercontent.com/47022167/128367312-1780ed2a-79ce-4def-96ab-5dfdb2b14c23.png)
 
