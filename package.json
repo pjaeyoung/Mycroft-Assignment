@@ -28,7 +28,7 @@
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
   },
-  "homepage": "http://pjaeyoung.github.io/Mycroft-Assignment/index.html",
+  "homepage": "https://pjaeyoung.github.io/Mycroft-Assignment",
   "eslintConfig": {
     "extends": [
       "react-app",
