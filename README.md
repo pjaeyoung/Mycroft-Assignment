@@ -1,70 +1,29 @@
-# Getting Started with Create React App
+## Mycroft 사전과제 
+- 구현 기간 : 3일 (2021/08/02 ~ 2021/08/05)
+- 사용 스택 : React / Redux 
+- 배포 링크 : https://pjaeyoung.github.io/Mycroft-Assignment/
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+![스크린샷, 2021-08-05 23-27-48](https://user-images.githubusercontent.com/47022167/128367312-1780ed2a-79ce-4def-96ab-5dfdb2b14c23.png)
 
-## Available Scripts
+### 개발 포인트
 
-In the project directory, you can run:
+1. 폴더 구조 전략
+    - 컴포넌트(components), 페이지(pages), 레이아웃(layout) 폴더라 나누었습니다. 
+    - 각 페이지는 공통 레이아웃을 가지고 있습니다. 
+    - 각 페이지는 필요한 컴포넌트를 가져와 조립한 결과물입니다.   
+    - 위 전략으로 컴포넌트 재사용성을 높였습니다. 
 
-### `yarn start`
+2. Token 값 저장
+    - Redux와 LocalStorage를 사용해서 로그인 상태를 유지하도록 했습니다. 
+    - 마이페이지를 PrivateRoute로 구분시킨 후 token 여부에 따라 마이페이지 접근을 제한했습니다. 
+    - useAuth hook을 만들어 반복되는 코드 (useSelector, useDispatch)를 줄였습니다. 
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+3. 공통 css 변수 
+    - 페이지 간 통일성있는 UI 제공을 위해 엘리먼트의 색상, 크기 등을 변수로 만들고 글로벌 스타일로 지정했습니다.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+4. Form 검사
+    - `Formik` 라이브러리를 사용해 여러 입력창 제어를 간단하고 빠르게 구현했습니다.
+    - 양식 유효성 검사는 validation.js 파일로 따로 두어 로그인과 회원가입에서 공통적으로 사용할 수 있게 만들었습니다.
 
-### `yarn test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `yarn build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `yarn eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+5. 캐싱
+    - 마이페이지에서 이전에 요청했던 페이지는 그 결과물을 캐싱하도록 `swr` 라이브러리를 사용했습니다.  
